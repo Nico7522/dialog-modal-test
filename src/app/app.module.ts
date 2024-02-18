@@ -21,12 +21,18 @@ import {
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
+import {FlexLayoutModule} from '@angular/flex-layout'
+import {
+MatSidenavModule, 
+} from '@angular/material/sidenav';
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     LoginComponent,
-    ModalloginComponent
+    ModalloginComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatInputModule,
     MatDialogActions,
     MatDialogContent,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSidenavModule,
+    FlexLayoutModule
 
   ],
   providers: [
